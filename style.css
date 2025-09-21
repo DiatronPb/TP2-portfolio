@@ -1,3 +1,7 @@
+html, body{
+    min-height: 100%;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -13,7 +17,11 @@ body{
 .bandeau-gauche{
     background-color: #f0f0f0;
     width: 300px;
-    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    min-height: 100%; /* 100% de la hauteur de la fenêtre */
+}
+
+.bandeau-gauche h1{
+    text-align: center;
 }
 
 .photo-profil{
@@ -51,3 +59,343 @@ body{
 .menu li{
     list-style: none;
 }
+
+.reseaux-sociaux{
+    display: flex;
+    gap: 15px;
+
+}
+
+.reseaux-sociaux li{
+    list-style: none;
+}
+
+.reseaux-sociaux li img{
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+.bandeau-droite{
+    width: 100%;
+    padding: 20px;
+}
+
+.portfolio-filter{
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-filter ul{
+    display: flex;
+    gap: 3px;
+}
+
+.portfolio-container hr{
+    border: 2px gray solid;
+}
+
+.portfolio-filter ul li{
+    list-style: none;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+}
+
+.portfolio-filter ul li.selected{
+    background-color: black;
+    color: #f0f0f0;
+}
+
+.portfolio-filter ul li:hover{
+    background-color: black;
+    color: #f0f0f0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.portfolio-article {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+.portfolio-article li{
+    list-style: none;
+    width: 100%;
+
+}
+
+.portfolio-article li img{
+    width: 100%;
+    min-width: 300px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    background-color: rgb(97, 185, 197);
+    display: inline-block;
+}
+
+.portfolio-article li .text{
+    background-color: #f0f0f0;
+    padding : 15px;
+}
+
+.portfolio-article li .text h5{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.portfolio-article li .text p{
+    margin: 0;
+}
+.portfolio-selector {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 40px;
+}
+
+.portfolio-selector .ch{
+    padding: 7px 15px;
+    background-color: lightgray;
+}
+
+.portfolio-selector .selected{
+    background-color: black;
+    color: white;
+}
+
+.portfolio-selector .ch:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.portfolio-image{
+    display: flex;
+    gap : 20px;
+    margin-top: 60px;
+}
+
+.portfolio-image img{
+    width: 100%;
+    min-width: 300px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    background-color: rgb(97, 185, 197);
+    display: inline-block;
+}
+
+.portfolio-skill{
+    padding: 0;
+}
+
+.portfolio-skill li{
+    list-style: none;
+}
+
+.portfolio-skill .barre-container{
+    background-color: darkgrey;
+    height: 35px;
+}
+
+.portfolio-skill .barre-container .barre{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-skill .barre-container .barre#barre-95{
+    width: 95%;
+}
+
+.portfolio-skill .barre-container .barre#barre-85{
+    width: 85%;
+
+}
+
+.portfolio-skill .barre-container .barre#barre-80{
+    width: 80%;
+}
+
+.portfolio-dl{
+    margin-top: 30px;
+    background-color: gray;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+}
+
+.portfolio-dl:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+.charge-ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.charge-ul .charge-li{
+    list-style: none;
+    width: 30%;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+}
+
+.charge-detail{
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.charge-detail li{
+    font-size: 0.9em;
+    text-align: center;
+    list-style: none;
+    padding: 15px 0px;
+    border-top: 1px solid gray;
+}
+
+
+.charge-detail .charge-title{
+    background-color: gray;
+    color: white;
+    padding: 20px 0px;
+    font-size: 1.2em;
+}
+
+.charge-detail .charge-title.special{
+    background-color: rgb(82, 165, 144);
+    border: none;
+
+}
+
+.charge-price .price{
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.charge-price div{
+    font-size: 0.8em;
+}
+
+.charge-sign button{
+    background-color: rgb(82, 165, 144);
+    border: none;
+    color: white;
+    padding :13px 25px;
+}
+
+.charge-sign button:hover{
+    cursor: pointer;
+}
+
+.contact{
+    background-color: rgb(163, 163, 163);
+    padding: 20px;
+}
+
+.contact h4{
+    padding: 0;
+    margin: 0;
+}
+
+.contact ul{
+    display: flex;
+    background-color: rgb(87, 87, 87);
+    padding: 0;
+    justify-content: space-between;
+}
+
+.contact ul li{
+    flex: 1; /*chaque item prend une part égale de la place*/
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding : 20px;
+    align-items: center;
+}
+
+.contact ul li.special{
+    background-color: rgb(82, 165, 144);
+}
+
+
+.contact ul li img{
+    width: 70px;
+    filter: brightness(0) invert(1); /*plus simple si svg fill : white*/
+    margin-bottom: 15px;
+}
+
+.contact hr{
+    border : 1px solid white;
+    margin: 30px 10px;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact form input{
+    height: 2em;
+    border: none;
+}
+
+.contact button{
+    display: flex;
+    gap : 5px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 0.9em;
+    padding : 10px 20px;
+}
+
+.contact button:hover{
+    cursor: pointer;
+}
+
+.contact button img{
+    width: 20px;
+    filter: brightness(0) invert(1); /*plus simple si svg fill : white*/
+}
+
+.footer{
+    background-color: rgb(87, 87, 87);
+    color: white;
+    padding : 15px 30px;
+}
+
+.footer ul{
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    gap : 15px;
+}
+
+.footer ul li{
+    flex : 1;
+}
+
+.foo-3 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap : 10px;
+}
+
+.foo-3 ul li{
+    background-color: gray;
+    padding: 5px;
+}
+

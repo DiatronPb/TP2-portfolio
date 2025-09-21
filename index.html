@@ -17,7 +17,7 @@
         </ul>
         <ul class="reseaux-sociaux">
             <li><a href="https://www.facebook.com"></a><img src="https://facebook.com/favicon.ico" alt="Facebook"></li>
-            <li><a href="https://www.instagram.com"></a><img src="https://instagram.com/favicon.ico" alt="Instagram"></li>
+            <!--li><a href="https://www.instagram.com"></a><img src="https://instagram.com/favicon.ico" alt="Instagram"></li-->
             <li><a href="https://www.snapchat.com"></a><img src="https://snapchat.com/favicon.ico" alt="Snapchat"></li>
             <li><a href="https://www.pinterest.com"></a><img src="https://pinterest.com/favicon.ico" alt="Pinterest"></li>
             <li><a href="https://www.twitter.com"></a><img src="https://twitter.com/favicon.ico" alt="Twitter"></li>
@@ -26,9 +26,168 @@
         
     </div>
     <div class = "bandeau-droite">
-        <div class = "portfolio-container"></div>
-        <div class = "contact"></div>>
-        <div class = "footer"></div>
+        <div class = "portfolio-container">
+            <h1>My Portfolio</h1>
+            <div class = "portfolio-filter">
+                <p>Filter : </p>
+                <ul>
+                    <li id = "0" class = "selected">ALL</li>
+                    <li id = "1">Design</li>
+                    <li id = "2">Photos</li>
+                    <li id = "3">Art</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <ul class = "portfolio-article">
+                <li><img src="" alt="image du sujet">
+                    <div class = "text">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure, velit amet dignissimos aliquid, voluptates aliquam similique ipsa, perspiciatis facere fugit ducimus ea error. Rem dolore provident soluta facilis ullam.</p>
+                    </div>
+                </li>
+                <li><img src="" alt="image du sujet">
+                    <div class = "text">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure, velit amet dignissimos aliquid, voluptates aliquam similique ipsa, perspiciatis facere fugit ducimus ea error. Rem dolore provident soluta facilis ullam.</p>
+
+                    </div>
+                </li>
+                <li><img src="" alt="image du sujet">
+                    <div class = "text">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure, velit amet dignissimos aliquid, voluptates aliquam similique ipsa, perspiciatis facere fugit ducimus ea error. Rem dolore provident soluta facilis ullam.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class= "portfolio-selector">
+                <div class = "ch" id = "-1"><<</div>
+                <div class = "ch selected" id = "1">1</div>
+                <div class = "ch" id = "2">2</div>
+                <div class = "ch" id = "3">3</div>
+                <div class = "ch" id = "4">4</div>
+                <div class = "ch" id = "+1">>></div>
+            </div>
+
+
+            <div class = "portfolio-image">
+                <img src="" alt="image de jsp quoi">
+                <img src="" alt="image de jsp quoi 2">
+            </div>
+
+            <h4><strong>About Me</strong></h4>
+            <p>Juste me, myself and I, exploring the universe of unkownment. I have a heart of love and an interset of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+            <h4>Technical Skills</h4>
+            
+            <ul class="portfolio-skill">
+                <li>
+                    <h5>Photography</h5>
+                    <div class = "barre-container"><div class = "barre" id = "barre-95">95%</div></div>
+                </li>
+                <li>
+                    <h5>Web Design</h5>
+                    <div class = "barre-container"><div class = "barre" id = "barre-85">85%</div></div>
+
+                </li>
+                <li>
+                    <h5>Photoshop</h5>
+                    <div class = "barre-container"><div class = "barre" id = "barre-80">80%</div></div>
+                </li>
+
+            </ul>
+            <div class="portfolio-dl">Download Resume</div>
+
+            <h4>How much  charge</h4>
+
+            <ul class="charge-ul">
+                <li class="charge-li">
+                    <ul class="charge-detail">
+                        <li class = "charge-title">Basic</li>
+                        <li>Web Design</li>
+                        <li>Photography</li>
+                        <li>1GB Storage</li>
+                        <li>Mail Support</li>
+                        <li class = "charge-price"><div class = "price">$ 10</div><div>per month</div></li>
+                        <li class = "charge-sign"><button>Sign Up</button></li>
+                    </ul>
+                </li>
+                <li class="charge-li">
+                    <ul class="charge-detail">
+                        <li class = "charge-title special">Pro</li>
+                        <li>Web Design</li>
+                        <li>Photography</li>
+                        <li>50GB Storage</li>
+                        <li>Endless Support</li>
+                        <li class = "charge-price"><div class="price">$ 25</div><div>per month</div></li>
+                        <li class = "charge-sign"><button>Sign Up</button></li>
+                    </ul>
+                </li>
+                <li class="charge-li">
+                    <ul class="charge-detail">
+                        <li class = "charge-title">Premium</li>
+                        <li>Web Design</li>
+                        <li>Photography</li>
+                        <li>Unlimited Storage</li>
+                        <li>Endless Support</li>
+                        <li class = "charge-price"><div class = "price">$ 25</div><div>per month</div></li>
+                        <li class = "charge-sign"><button>Sign Up</button></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class = "contact">
+            <h4>Contact Me</h4>
+            <ul>
+                <li><img src="images/courrier.png" alt="">email@email.com</li>
+                <li class="special"><img src="images/broche-de-localisation.png" alt="">chicago, US</li>
+                <li><img src="images/telephone.png" alt="">512312311</li>
+            </ul>
+            <hr>
+            <form action="">
+                <label for="">Name</label>
+                <input type="text">
+                <label for="">Email</label>
+                <input type="email">                
+                <label for="">Message</label>
+                <input type="text">
+            </form>
+            <button><img src="images/envoyer.png" alt="icone d'envoie">Send Message</button>
+        </div>
+        <div class = "footer">
+            <ul>
+                <li class = "foo-1">
+                    <h3>FOOTER</h3>
+                    <p>Praesent tincidunt sed tellus ut rutum. Sed</p>
+                </li>
+                <li class = "foo-2">
+                    <h3>BLOG POSTS</h3>
+                    <div><img src="" alt=""><p>lorem <br> Sed mattis nunc</p></div>
+                    <hr>
+                </li>
+                <li class = "foo-3">
+                    <h3>POPULAR TAGS</h3>
+                    <ul>
+                        <li>Travel</li>
+                        <li>New_York</li>
+                        <li>London</li>
+                        <li>IKEA</li>
+                        <li>NORWAY</li>
+                        <li>DIY</li>
+                        <li>Ideas</li>
+                        <li>Baby</li>
+                        <li>Family</li>
+                        <li>News</li>
+                        <li>Clothing</li>
+                        <li>Shopping</li>
+                        <li>Sports</li>
+                        <li>Games</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
